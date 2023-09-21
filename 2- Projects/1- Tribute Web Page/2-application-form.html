@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #bccbde;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        main-title {
+            display: flex;
+            margin: auto;
+            margin-left: 300px;
+        }
+
+        #job-role {
+            height: 40px;
+            width: 200px;
+            border-radius: 6px;
+            font-weight: 550;
+        }
+
+
+        #text-area {
+            border-radius: 9px;
+
+        }
+
+        #submit {
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            color: #fff;
+            display: flex;
+            margin: 20px auto;
+            transition: all ease 0.5s;
+        }
+
+        #submit:hover {
+            width: 110px;
+            box-shadow: 5px 5px 0px black;
+        }
+
+
+        form>div {
+            margin-left: 200px;
+        }
+
+        form div input {
+            width: 200px;
+            padding: 7px;
+            border-radius: 6px;
+        }
+
+        .container {
+            background-color: #dfd7ea;
+            border-radius: 16px;
+            padding: 40px;
+            margin: 50px 200px;
+            font-weight: 600;
+            box-shadow: 15px 15px 15px #b290de;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1 class="main-title">Job Application Form</h1>
+    <div class="container">
+
+        <div class="form-items">
+            <form action="nobackend.php">
+
+                <div>
+                    <label for="fname">First Name</label><br>
+                    <input type="text" name="text" id="fname" autocomplete="on" autofocus> <br><br>
+                </div>
+
+                <div class="last-name">
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" name="text" id="lname" autocomplete="on"> <br>
+                </div>
+
+                <div>
+                    <label for="faname">Father Name</label><br>
+                    <input type="text" name="text" id="faname" autocomplete="on"> <br>
+                </div>
+
+                <div class="user-age">
+                    <label for="name">Age</label> <br>
+                    <input type="number" name="age" id="age" autocomplete="on"><br>
+                </div>
+
+                <div>
+                    <label for="faname">Father Name</label><br>
+                    <input type="text" name="text" id="faname" autocomplete="on"> <br>
+                </div>
+                <div>
+                    <label for="Email">Email</label><br>
+                    <input type="email" name="email" id="Email" autocomplete="on"><br>
+                </div>
+
+                <div>
+                    <label for="user-password">Password</label><br>
+                    <input type="password" name="user-password" id="user-password" autocomplete="on"><br>
+                </div>
+
+                <div>
+                    <label for="telephone">Phone Number</label><br>
+                    <input type="tel" name="telephone" id="telephone" autocomplete="on"><br>
+                </div>
+
+                <div>
+                    <label for="country">Country</label><br>
+                    <input type="text" name="user-country" id="country" autocomplete="on"><br>
+                </div>
+
+                <div>
+                    <label for="city">City</label><br>
+                    <input type="text" name="city" id="city" autocomplete="on"><br>
+                </div>
+
+                <div>
+                    <label for="province">Province</label><br>
+                    <input type="province" name="province" id="province" autocomplete="on"><br>
+                </div>
+
+                <div>
+                    <label for="zip code">Zip Code</label><br>
+                    <input type="text" name="zip code" id="zip code" autocomplete="on"><br>
+                </div>
+
+                <div>
+                    <label for="text-area">Write Something about yourself</label><br>
+                    <textarea name="text-area" id="text-area" cols="35" rows="12" aria-setsize="20">
+                </textarea><br>
+                </div>
+
+                <div>
+                    <label for="language">Which programing language do you know?</label><br>
+
+                    <input type="checkbox" id="lang-1" name="lang-1">
+                    <label for="lang-1"> HTML </label><br>
+
+                    <input type="checkbox" id="lang-2" name="lang-2">
+                    <label for="lang-2"> CSS </label><br>
+
+                    <input type="checkbox" id="lang-3" name="lang-3">
+                    <label for="lang-3"> JS </label><br><br>
+
+                    <input type="checkbox" id="lang-4" name="lang-4">
+                    <label for="lang-4"> Python </label><br>
+
+                    <input type="checkbox" id="lang-5" name="lang-5">
+                    <label for="lang-5"> JS </label><br><br>
+                </div>
+
+                <div>
+                    <label for="cvfile">Upload Tour CV/Resume</label><br>
+                    <input type="file" name="cvfile" id="cvfile" multiple><br><br>
+                </div>
+
+                <div>
+                    <label for="job-role">Selects Job Role</label><br>
+                    <select name="job-role" id="job-role">
+                        <option value="Frontend Developer">Frontend Developer</option>
+                        <option value="Backend Developer">Backend Developer</option>
+                        <option value="Full Stack Developer">Full Stack Developer</option>
+                        <option value="UI/UX Designer">UI/UX Designer</option>
+                    </select><br>
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>

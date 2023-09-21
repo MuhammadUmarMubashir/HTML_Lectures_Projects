@@ -1,0 +1,334 @@
+<!--This is doctype-->
+<!DOCTYPE html>
+<!-- our html tag will start from here. -->
+<html lang="en">
+<!--Our head tag starts from here.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+</head>
+<!--Our head starts from here.-->
+
+<body>
+    <h2>HTML Forms</h2>
+    <form action="backend.php">
+        <!-- To wrap the table data in fieldset -->
+        <fieldset>
+            <!-- Legend is for captioning the table -->
+            <legend>HTML Dummy Table</legend>
+            <label for="fName">First Name:</label><br>
+            <input type="text" name="myFirstName" id="fName" placeholder="Enter Your Name"><br>
+
+            <label for="lName">Last Name:</label><br>
+            <input type="text" name="myLastName" id="lName"><br>
+
+            <label for="Fathername">Father Name:</label><br>
+            <input type="text" name="myFatherName" id="Fathername"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="myEmail" id="email"><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" name="mypass" id="password"><br>
+
+            <!-- for selecting zero or more of many choices -->
+            <label for="eligible">Are you Hafiz-Quran?</label><br>
+            <input type="checkbox" name="myEligibility" id="eligible"><br><br>
+
+            <label for="date">Date:</label><br>
+            <input type="date" name="myDate" id="date"><br><br>
+
+            <p>Gender:</p>
+
+            <!-- for selecting one of many choices -->
+            <label for="gender">Male</label>
+            <input type="radio" name="myGender" id="gender" value="Male"><br>
+
+            <label for="Fgender">Female</label>
+            <input type="radio" name="myGender" id="Fgender" value="Female"><br>
+
+            <label for="Ogender">Other</label>
+            <input type="radio" name="myGender" id="Ogender" value="Other"><br><br>
+
+            <!-- Dropdown option is here -->
+            <label for="class">Classes:</label><br>
+            <!-- multiple will allow us to select multiple options. -->
+            <select name="myClasses" id="class" size="3" multiple>
+                <option value="ON:">Online</option>
+                <option value="PHY">Physical</option>
+                <option value="HYB">Hybrid</option>
+            </select><br>
+
+            <!-- Textarea to write multiple paragraph -->
+            <label for="text">Write Something about yourself:</label><br>
+            <textarea name="myText" cols="80" rows="20" id="text"></textarea><br><br>
+
+            <!-- Subit button is here -->
+            <label for="sub">Submit:</label><br>
+            <input type="submit" value="Submit Now"><br><br>
+            <!-- same result with button element -->
+            <button>Submit Now</button><br><br>
+
+            <label for="sub">Reset:</label><br>
+            <input type="reset" value="Reset Now"><br>
+
+            <!-- Image Button is here -->
+            <input type="image" src="image-button.png" alt="Clink Here" width="120px" height="120px">
+
+            <br>
+
+
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </fieldset>
+
+    </form>
+    <!-- Practice Exercise:
+Upload it to Github later.
+    <div class="right-container">
+        <h2>Creates HTML Tables</h2> <br>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="3">Day</th>
+                    <th colspan="3">Seminar</th>
+                </tr>
+                
+                <tr>
+                    <th colspan="2">Schedule</th>
+                    <th rowspan="2">Topic</th>
+                </tr>
+
+                <tr>
+                    <th>Begin</th>
+                    <th>End</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="2">Monday</td>
+                    <td rowspan="2">yime</td>
+                    <td rowspan="2">time</td>
+                    <td>Joghn</td>
+                </tr>
+
+                <tr>
+                    <td>Joghn</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3">Tuesday</td>
+                    <td>time</td>
+                    <td>time</td>
+                    <td rowspan="2">Joghn</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Joghn</td>
+                </tr>
+                
+                <tr>
+                    <td>4</td>
+                    <td>Joghn</td>
+                    <td rowspan="1">founder of founder</td>
+                </tr>
+
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Joghn</td>
+                    <td>4</td>
+                    <td>Joghn</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+    </div> -->
+    <!-- ................................................................................ -->
+
+    <!-- <h2>Event Registration</h2>
+    <form action="nobackend">
+
+        <label for="name">Name:</label><br><br>
+        <input type="text" name="user-name" id="name" autofocus><br>
+
+        <label for="email">Email:</label><br><br>
+        <input type="email" name="user-email" id="email"><br>
+
+        <label for="phone">Phone:</label><br><br>
+        <input type="tel" name="user-tel" id="phone"><br>
+
+        <label for="occupation">Occupation:</label><br><br>
+        <select name="occupation" id="occupation">
+            <option value="">--Please Choose Occupation--</option>
+            <option value="Student">Student</option>
+            <option value="Professional">Professional</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Topics of Interest:</legend>
+            <input type="checkbox" name="user-checkbox" id="html-checkbox">
+            <label for="html-checkbox">HTML</label><br><br>
+
+            <input type="checkbox" name="user-checkbox" id="css-checkbox">
+            <label for="css-checkbox">CSS</label><br><br>
+
+            <input type="checkbox" name="user-checkbox" id="js-checkbox">
+            <label for="js-checkbox">JavaScript</label><br><br>
+        </fieldset><br>
+
+        <label for="textarea">Comments:</label><br>
+        <textarea name="textarea" id="textarea" cols="80" rows="8"></textarea><br>
+
+        <button>Register</button>
+    </form> -->
+
+    <!-- .................................................................................. -->
+
+
+    <!-- <h2>Job Application</h2>
+    <form action="nobackend">
+
+        <label for="name">Name:</label><br><br>
+        <input type="text" name="user-name" id="name" autofocus><br>
+
+        <label for="email">Email:</label><br><br>
+        <input type="email" name="user-email" id="email"><br>
+
+        <label for="phone">Phone:</label><br><br>
+        <input type="tel" name="user-tel" id="phone"><br>
+
+        <label for="file">Resume:</label><br><br>
+        <input type="file" name="choose-file" id="file"><br>
+
+        <label for="experience">Experience(Years):</label> <br><br>
+        <input type="number" name="exp" id="experience" min="0" max="50"><br>
+
+        In case of checkbox and radio buttons, label should be below.
+        <fieldset>
+            <legend>Skills:</legend>
+            <input type="checkbox" name="user-checkbox" id="html-checkbox">
+            <label for="html-checkbox">HTML</label><br><br>
+
+            <input type="checkbox" name="user-checkbox" id="css-checkbox">
+            <label for="css-checkbox">CSS</label><br><br>
+
+            <input type="checkbox" name="user-checkbox" id="js-checkbox">
+            <label for="js-checkbox">JavaScript</label><br><br>
+        </fieldset><br>
+
+        <label for="education">Higher Education:</label><br><br>
+        <select name="educatuon" id="education">
+            <option value="">--Please Choose Education--</option>
+            <option value="PhD">PhD</option>
+            <option value="mphil">M.Phil</option>
+            <option value="master">Master</option>
+            <option value="grad">Graduation</option>
+            <option value="undergra">Undergraduation</option>
+            <option value="inter">Inter</option>
+            <option value="matric">Matric</option>
+        </select><br><br>
+
+        <!- Most important: In case of radio button for selecting only one
+        button, name="" attribute of all options should be same.-->
+    <!-- <fieldset>
+            <legend>Availability:</legend>
+
+            <input type="radio" name="radio44" id="avail1" checked>
+            <label for="avail1">Part-time</label><br>
+
+            <input type="radio" name="radio44" id="avail2">
+            <label for="avail2">Full-time</label>
+        </fieldset><br>
+
+        <label for="textarea">Additional Comments:</label><br>
+        <textarea name="textarea" id="textarea" cols="80" rows="8"></textarea><br>
+
+        <button>Submit Application</button>
+    </form> -->
+
+    <!-- <h2>Complex Form</h2>
+    <form action="nobackend">
+        <fieldset>
+            <legend><strong>Personal Information</strong></legend>
+
+            <label for="name">Name:</label>
+            <input type="text" name="user-name" id="name" autofocus><br> <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="user-email" id="email"><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="user-tel" id="phone"><br><br>
+
+            <label for="DOB">Date of Birth:</label>
+            <input type="date" name="DOB" id="DOB">
+
+            <p>Gender:</p>
+
+            <input type="radio" name="radio44" id="avail1" checked>
+            <label for="avail1">Male</label><br>
+
+            <input type="radio" name="radio44" id="avail2">
+            <label for="avail2">Female</label><br><br>
+
+            <label for="education">Country:</label>
+            <select name="educatuon" id="education">
+                <option value="">--Please Choose Country--</option>
+                <option value="PhD">United States</option>
+                <option value="mphil">UK</option>
+                <option value="master">Pakistan</option>
+                <option value="grad">India</option>
+                <option value="undergra">SiriLanka</option>
+                <option value="inter">Nepal</option>
+                <option value="matric">Australia</option>
+            </select><br>
+        </fieldset>
+
+        Most important: In case of radio button for selecting only one
+        button, name="" attribute of all options should be same.-->
+    <!-- <fieldset>
+            <legend><strong>Address</strong></legend>
+
+            <label for="address">Street:</label>
+            <input type="text" name="address" id="address"><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city"><br><br>
+
+            <label for="State">State:</label>
+            <input type="text" name="State" id="State"><br><br>
+
+            <label for="Zip Code">Zip Code</label>
+            <input type="text" name="Zip Code" id="Zip Code" ><br><br>
+
+        </fieldset><br>
+
+        <fieldset>
+            <legend><strong>Other Information</strong></legend>
+
+            <label for="textarea">Comments:</label><br>
+            <textarea name="textarea" id="textarea" cols="80" 
+            rows="8"></textarea><br>
+
+            <input type="checkbox" name="TOS" id="TOS" required>
+            <label for="TOS">I agree to the term of service</label><br>
+        </fieldset><br>
+
+        <button>Submit Form</button>
+    </form> -->
+
+</body>
+
+</html>
