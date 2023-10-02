@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block Elements</title>
+<!-- I have interchanged the block elements to inline block elements and vice versa. see notes -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            display: inline;
+            height: 500px; /*Its respecting padding. Why?*/
+            width: 500px;/*Not accepting height,width, t/b margin.*/
+            padding: 20px 30px;
+            margin: 20px 120px;
+        }
+
+        span {
+            display:block;
+            height: 300px;
+            width: 300px;/*Accepting height & width,margin, padding*/
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            background-color: aqua;
+            height: 350px;
+            width: 350px;/*Accepting height & width,margin padding*/
+            padding: 30px;
+            margin: 50px;
+        }
+
+        .concept {
+            display: inline-block;
+            background-color: rgb(0, 255, 38);
+            border: 2px solid green;
+            height: 300px;
+            width: 300px;/*Accepting height & width,margin padding*/
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- div tag is used for division as a container or wrapper. -->
+    <p style="border: 1px solid red;">This is para1 and block element.</p>
+    <p style="border: 1px solid blue;">This is para2 and block element.</p>
+
+    <span style="border: 2px solid green;">This is inline element1.</span>
+    <span style="border: 2px solid orange;">This is inline element2.</span>
+
+    <span class="inline-block" style="border: 2px solid black;">This is inline block element and behaves like an inline element but accepts block level properties.</span>
+    
+    <span class="inline-block" style="border: 2px solid black;">This is another inline block element and behaves like an inline element but accepts block level properties.</span>
+
+    <p class="concept">This is block element and behaves like an inline block element but accepts block level properties.</p>
+
+    <p class="concept">This is another block element and behaves like an inline block element but accepts block level properties.</p>
+
+
+    <!-- Block elements starts from the next line and take space from left to 
+    right and inline element does not starts from the next line and takes space
+    according to the content.
+    -->
+
+    <!-- <span></span>, <a></a> are inline Elements.
+    <p></p>, <strong></strong>, <div></div>  are block Elements. -->
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
