@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ids and Classes</title>
+
+    <!-- This is called internal CSS where classes, ids and style are added separately in the head tag to apply on the body's tag. -->
+    <style>
+        #heading1 {
+            color: aqua;
+        }
+
+        .heading2 {
+            color: brown;
+        }
+        #lines {
+            color: rgb(22, 234, 22);
+        }
+
+    </style>
+</head>
+
+<body>    
+    <!--Classes can repeat itself but do never repeat id anywhere.  -->
+
+    <h1 id="heading1">This is heading1</h1>
+    <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis distinctio voluptates, modi autem consequuntur quo ratione iste voluptate sint sequi accusamus quaerat corrupti alias ad tenetur fugiat doloremque non blanditiis temporibus natus dolore! Fuga laborum assumenda blanditiis eligendi provident officia!</p>
+
+    <!-- This is called inline CSS where class, style and ids are adding with line by line seperately. -->
+
+    <h1 class="heading2">This is heading1</h1>
+    <p id="lines">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis distinctio voluptates, modi autem consequuntur quo ratione iste voluptate sint sequi accusamus quaerat corrupti alias ad tenetur fugiat doloremque non blanditiis temporibus natus dolore! Fuga laborum assumenda blanditiis eligendi provident officia!</p>
+
+
+    <h2>HTML Ids and Classes.</h2>
+    <p>This is mainbox.</p>
+    <div id="mainbox" class="redBg">This is mainbox.</div>
+
+    <span class="redBg"></span>
+    
+     <!-- . is used for class and # is used for id -->
+
+    <!-- press span.redBg -->
+    <span class="redBg"></span>
+
+    <!-- press span#redBg -->
+    <span id="redBg"></span>
+
+    <!-- press div.redbg.blackBorder.anotherClass -->
+    <div class="redBg blackBorder anotherClass"></div>
+
+    <!-- Emmet takes div tag as default. -->
+    <div class="redBg"></div>
+
+    <span class="redbg blackBorder anotherClass">first</span>
+    <span class="redbg blackBorder anotherClass">second</span>
+    <span class="redbg blackBorder anotherClass">third</span>
+    <span class="redbg blackBorder anotherClass">fourth</span>
+
+</body>
+</html>
